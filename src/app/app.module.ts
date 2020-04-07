@@ -9,14 +9,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
 import 'hammerjs';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, MenuComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MatToolbarModule, MatButtonModule,
-    FlexLayoutModule, MatCardModule, MatGridListModule, MatListModule,AppRoutingModule],
+    BrowserModule, BrowserAnimationsModule,
+    MatToolbarModule, MatGridListModule, MatButtonModule, MatCardModule, MatGridListModule, MatListModule, AppRoutingModule,
+    AppComponent, MenuComponent,
+    FlexLayoutModule],
   providers: [],
   bootstrap: [AppComponent]})
 export class AppModule { }
+export class menucomponent{ }

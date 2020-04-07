@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Dish } from '../shared/dish';
-
 @Component({
   selector: 'app-menu',
-  templateUrl: '../menu.component.html',
-  styleUrls: ['../menu.component.scss']
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
   constructor() {
-    const DISHES: Dish[] = [
+    let DISHES: Dish[] = [
       {
         id: '0',
         name: 'Uthappizza',
-        image: '..a/assets/images/uthappizza.png',
+        image: '../assets/images/uthappizza.png',
         category: 'mains',
         featured: true,
         label: 'Hot',
@@ -50,9 +49,15 @@ export class MenuComponent implements OnInit {
         description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
       }
     ];
+    DISHES = DISHES;
+
+    let selectedDish: Dish;
+    selectedDish = DISHES[0];
+
   }
 
   ngOnInit(): void {
+    alert("I am an alert box!");
   }
 
 }
