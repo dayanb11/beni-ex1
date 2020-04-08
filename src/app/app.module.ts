@@ -15,12 +15,8 @@ import 'hammerjs';
   declarations: [
     AppComponent, MenuComponent
   ],
-  imports: [
-    BrowserModule, BrowserAnimationsModule,
-    MatToolbarModule, MatGridListModule, MatButtonModule, MatCardModule, MatGridListModule, MatListModule, AppRoutingModule,
-    AppComponent, MenuComponent,
-    FlexLayoutModule],
+  imports: [    ],
   providers: [],
   bootstrap: [AppComponent]})
 export class AppModule { }
-export class menucomponent{ }
+
