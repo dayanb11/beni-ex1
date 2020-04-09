@@ -1,9 +1,8 @@
-import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -15,11 +14,10 @@ import 'hammerjs';
   declarations: [
     AppComponent, MenuComponent
   ],
-  imports: [  MatGridListModule,
+  imports: [  MatListModule,MatToolbarModule,
     MatCardModule, BrowserAnimationsModule,
-    MatToolbarModule,    FlexLayoutModule,
-    
-    MatButtonModule],
+    MatToolbarModule, FlexLayoutModule,MatButtonModule
+    ],
   providers: [],
   bootstrap: [AppComponent]})
 export class AppModule { }

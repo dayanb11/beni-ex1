@@ -57,7 +57,6 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    alert("I am an alert box!");
   }
 
 }
