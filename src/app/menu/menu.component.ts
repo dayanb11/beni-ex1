@@ -49,8 +49,8 @@ export class MenuComponent implements OnInit {
         description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
       }
     ];
-    DISHES = DISHES;
-
+   let dishes: Dish[];
+    dishes = DISHES;
     let selectedDish: Dish;
     selectedDish = DISHES[0];
 
