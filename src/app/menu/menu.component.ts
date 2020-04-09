@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
       {
         id: '0',
         name: 'Uthappizza',
-        image: '../assets/images/uthappizza.png',
+        image: '/assets/images/uthappizza.png',
         category: 'mains',
         featured: true,
         label: 'Hot',
@@ -21,7 +21,7 @@ export class MenuComponent implements OnInit {
       {
         id: '1',
         name: 'Zucchipakoda',
-        image: '../assets/images/zucchipakoda.png',
+        image: '/assets/images/zucchipakoda.png',
         category: 'appetizer',
         featured: false,
         label: '',
@@ -31,7 +31,7 @@ export class MenuComponent implements OnInit {
       {
         id: '2',
         name: 'Vadonut',
-        image: '../assets/images/vadonut.png',
+        image: '/assets/images/vadonut.png',
         category: 'appetizer',
         featured: false,
         label: 'New',
@@ -41,7 +41,7 @@ export class MenuComponent implements OnInit {
       {
         id: '3',
         name: 'ElaiCheese Cake',
-        image: '../assets/images/elaicheesecake.png',
+        image: '/assets/images/elaicheesecake.png',
         category: 'dessert',
         featured: false,
         label: '',

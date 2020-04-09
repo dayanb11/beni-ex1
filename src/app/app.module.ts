@@ -10,14 +10,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import 'hammerjs';
+import { Dish } from './shared/dish';
 @NgModule({
-  declarations: [
-    AppComponent, MenuComponent
-  ],
-  imports: [  MatListModule,MatToolbarModule,
+  declarations: [AppComponent, MenuComponent,Dish],
+  imports: [  MatListModule,MatToolbarModule,MatButtonModule,
     MatCardModule, BrowserAnimationsModule,
-    MatToolbarModule, FlexLayoutModule,MatButtonModule
-    ],
+    , FlexLayoutModule],
   providers: [],
   bootstrap: [AppComponent]})
 export class AppModule { }

@@ -3,11 +3,11 @@
      fxLayoutGap="10px">
 
   <mat-list fxFlex>
-    <mat-list-item *ngFor="let dish of dishes">
-      <img matListAvatar src={{dish.image}} alt={{dish.name}}>
-      <h1 matLine> {{dish.name}} </h1>
+    <mat-list-item *ngFor="let Dish of DISHES">
+      <img matListAvatar src={{Dish.image}} alt={{Dish.name}}>
+      <h1 matLine> {{Dish.name}} </h1>
       <p matLine>
-        <span> {{dish.description}} </span>
+        <span> {{Dish.description}} </span>
       </p>
     </mat-list-item>
   </mat-list>
