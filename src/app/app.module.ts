@@ -11,8 +11,9 @@ import { AppComponent, appmodule } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import 'hammerjs';
 import { Dish } from './shared/dish';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
 @NgModule({
-  declarations: [AppComponent, MenuComponent],
+  declarations: [AppComponent, MenuComponent, DishdetailComponent],
   imports: [  MatListModule,MatToolbarModule,
     MatCardModule, BrowserAnimationsModule,
     , FlexLayoutModule],
