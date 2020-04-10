@@ -6,7 +6,13 @@
         {
             "type": "npm",
             "script": "ng",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "label": "npm: ng",
+            "detail": "ng serve",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
