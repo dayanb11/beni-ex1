@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ex1';
 }
-export class appmodule {
-  title = 'menu1'
-}
+// export class appmodule {
+//   title = 'menu1'
+// }

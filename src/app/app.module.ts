@@ -1,25 +1,29 @@
-//import{UpperCasePipe} from '@angular/common'
-//import { MatListModule } from '@angular/material/list';
-import { MatCardModule } from '@angular/material/card';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { FlexLayoutModule } from '@angular/flex-layout';
-//import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-//import { AppRoutingModule } from './app-routing.module';
-import { AppComponent, appmodule } from './app.component';
-import { MenuComponent } from './menu/menu.component';
+// import{UpperCasePipe} from '@angular/common'
 import 'hammerjs';
-import { Dish } from './shared/dish';
+
+import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { MenuComponent } from './menu/menu.component';
+
+// import { BrowserModule } from '@angular/platform-browser';
+// import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [AppComponent, MenuComponent, DishdetailComponent],
-  imports: [  MatListModule,
+  imports: [
+    MatListModule,
     MatToolbarModule,
     MatCardModule,
-     BrowserAnimationsModule,
-    , FlexLayoutModule],
+    BrowserAnimationsModule,
+    FlexLayoutModule],
   providers: [],
-  bootstrap: [AppComponent]})
+  bootstrap: [AppComponent]
+})
 export class AppModule { }
 
