@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { MenuComponent } from './menu/menu.component';
 
-// import { BrowserModule } from '@angular/platform-browser';
+ import { BrowserModule } from '@angular/platform-browser';
 // import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [AppComponent, MenuComponent, DishdetailComponent],

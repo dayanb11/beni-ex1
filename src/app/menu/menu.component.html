@@ -4,35 +4,14 @@
      <h1>Hello</h1>
 
   <mat-list fxFlex>
-    <mat-list-item *ngFor="let Dish of DISHES">
-      <img matListAvatar src={{Dish.image}} alt={{Dish.name}}>
-      <h1 matLine> {{Dish.name}} </h1>
-      <p matLine>
-        <span> {{Dish.description}} </span>
-      </p>
-    </mat-list-item>
-  </mat-list>
-
-</div>
-<div><h1>Helo</h1></div>
-<div fxFlex *ngIf="selectedDish">
+      <img src={{Dish.image}} alt={{Dish.name}}>
+      <h1> {{Dish.name}} {{Dish.description}} </h1>
   <div>
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>
+
         <h3>{{selectedDish.name}}</h3>
-      </mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src={{selectedDish.image}} alt={{selectedDish.name}}>
-    <mat-card-content>
+    <img src={{selectedDish.image}} alt={{selectedDish.name}}>
       <p>{{selectedDish.description}}
       </p>
-    </mat-card-content>
-    <mat-card-actions>
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
 </div>
-
-<h1>Menu</h1>
